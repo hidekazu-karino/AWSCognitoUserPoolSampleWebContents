@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>AWS Cognito User Pool Sample -Sign Up Confirm-</title>
+        <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+        <script src='/lib/aws-cognito-sdk.js'></script>
+        <script src='/lib/amazon-cognito-identity.js'></script>
+        <script src='/cognito-auth.js'></script>
+    </head>
+    <body>
+        <div class="cognito">
+            <form class="signupform">
+                <h1>Sign Up Confirmation</h1>
+                <label>E-Mail Address</label>
+                <input type="text" id="email" required autofocus></input><br>
+                <label>Verification Code</label>
+                <input type="text" id="code" required></input>
+                <br>
+                <input type="button" id="signupconfirmbutton" value="sign up verify"></input>
+            </form>
+        </div>
+        <script type='text/javascript'>
+            $('#signupconfirmbutton').click(activateConfirm);
+        </script>
+    </body>
+</html>
